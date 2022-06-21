@@ -1,6 +1,10 @@
-import { List } from 'immutable';
+import { List } from 'immutable'
 
-const getListObject = (array) => List(array);
-const addElementToList = (list, element) => list.push(element);
+export function getListObject(array) {
+    return List(array);
+}
 
-export { getListObject, addElementToList };
+export function addElementToList(list, element) {
+    list.push(element);
+    return list
+}
